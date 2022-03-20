@@ -1,0 +1,94 @@
+% !TeX spellcheck = en_GB
+%\documentclass[notes=only]{beamer}
+\documentclass[notes]{beamer}
+%\documentclass[]{beamer}
+%\documentclass{beamer}
+ \usepackage[T1]{fontenc}
+ %numbering=none,
+\usetheme[progressbar=frametitle,background=dark]{metropolis} % Use metropolis theme
+
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen=right}
+
+%\usepackage[overridenote]{pdfpc}
+
+\PassOptionsToPackage{hyphens}{url}\usepackage[
+backend=biber,
+style=authortitle-comp, % choose a style from https://de.overleaf.com/learn/latex/Biblatex_citation_styles
+%sortlocale=de_AT,
+sortlocale=en_GB,
+%backref=true % use if you like it -- puts a link to the page where it is cited into the bibliography
+]{biblatex}
+
+\DeclareCiteCommand{\arxivcite}[\mkbibbrackets]
+{\usebibmacro{prenote}}
+{\usebibmacro{citeindex}%
+	\newunit
+	\usebibmacro{eprint}}
+{\multicitedelim}
+{\usebibmacro{postnote}}
+
+
+\addbibresource{bib.bib}
+
+\definecolor{mdarkgrey}{HTML}{333333}
+\definecolor{mblack}{HTML}{111111}
+\definecolor{mgreen}{HTML}{81b1d2}
+\setbeamercolor{frametitle}{%
+  	fg=normal text.fg,
+  	bg=mblack,
+	parent=palette primary
+}
+
+\setbeamercolor{alerted text}{%
+	fg=mgreen
+}
+
+
+  \setbeamercolor{normal text}{%
+	fg=black!2,
+	bg=mdarkgrey
+}
+
+
+\usepackage{csquotes}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{pbox}
+\usepackage[absolute,overlay]{textpos}
+ \usepackage{appendixnumberbeamer}
+\usepackage{tabularx}
+
+\title{}
+
+
+\renewcommand\thempfootnote{\fnsymbol{mpfootnote}}
+\subtitle{}
+\author{Lukas Winkler}
+\date{March 31, 2022}
+
+
+%\setbeamertemplate{section in toc}[ball unnumbered]
+%\setbeamertemplate{subsection in toc}[ball unnumbered]
+
+
+\begin{document}
+\maketitle
+
+
+
+
+
+
+
+\begin{frame}{}
+
+
+\note{
+
+}
+\end{frame}
+
+
+
+\end{document}
