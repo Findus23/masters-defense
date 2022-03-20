@@ -1,0 +1,9 @@
+compile_pdf:
+  tags: 
+    - shell
+  script:
+    - latexmk -pdf presentation.tex -shell-escape -lualatex
+  artifacts:
+    paths:
+      - presentation.pdf
+
